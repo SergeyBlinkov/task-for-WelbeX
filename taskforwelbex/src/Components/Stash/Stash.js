@@ -1,23 +1,15 @@
 import React from "react";
 
-const gg = () =>{
+
+
+
+export default function Stash(props) {
   
-}
-
-export default function Stash(array1) {
-
-// array1 = []
-
-  // for (let i = 0; i < 5; i++) {
-   
-  //   const obj1 = {date: RandomDate(), name: RandomName(),
-  //     value: RandomNumb(), distance: RandomDistance()}
+let array = props.array.concat()
  
-  //      array1.push( obj1 );
-  //   }
   
 
-  return array1.map((p) => {
+  return array.map((p) => {
     
       
     
