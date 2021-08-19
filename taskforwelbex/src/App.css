@@ -1,0 +1,19 @@
+.tab{
+width: 100%;
+border: 2px solid black;
+border-collapse: collapse; 
+text-align: center;
+margin: 20px auto;
+}
+.tab td, th {
+border:1px solid black;
+}
+.tab th{
+  background-color: #FFEBCD;
+}
+.filt {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
