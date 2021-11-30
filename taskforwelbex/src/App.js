@@ -1,24 +1,23 @@
 import Stash from "./Components/Stash/Stash";
 import "./App.css";
 import React, { useState } from "react";
-import data from './Components/data';
-
-import Filter from './Components/Filter/Filter'
+import Data from './Components/Data';
+import Filter1 from './Components/Filter1/Filter1'
 
 function App() {
-  const [array1, setArray1] = useState(data());
+  const [array1, setArray1] = useState(Data());
   const [state, setState] = useState(1);
   
   const test = () => {
     setState(+(state + 1));
   };
-console.log(array1)
+
 
   return (
     <>
       <div className="filt">
         <div>Фильтры</div>
-        {<Filter array={array1} fu={setArray1} />}
+        {<Filter1 array={array1} fu={setArray1} />}
         <p onClick={test}>{`Твой счетчик ${state}`}</p>
       </div>
       <table className="tab">
